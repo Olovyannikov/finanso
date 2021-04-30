@@ -1,0 +1,83 @@
+section.rating
+    .rating__container.container
+        .rating__inner
+            h3.rating__title.title Общий рейтинг компании
+            .rating__total
+                .rating__star.star-rating
+                    .star-rating__counter
+                        span.star-rating__counter-total 4.8
+                        span.star-rating__counter-of 5
+                        .star-rating__stars
+                            span
+                        p.star-rating__reviews-counter
+                            span 6 <span>отзывов</span>
+                .rating__progress.rates
+                    ul.rates__items
+                        li.rates__item
+                            h4.rates__title Скорость работы
+                            .rates__progress
+                                .progress
+                                    .progress-bar(data-progress='4.8')
+                                .progress-info
+                        li.rates__item
+                            h4.rates__title Качество обслуживания
+                            .rates__progress
+                                .progress
+                                    .progress-bar(data-progress='3.1')
+                                .progress-info
+                        li.rates__item
+                            h4.rates__title Ценовая политика
+                            .rates__progress
+                                .progress
+                                    .progress-bar(data-progress='1.6')
+                                .progress-info
+secttion.reviews
+    .reviews__container.container
+        h3.reviews__title.title Отзывы о компании ООО “Ковалевский”
+        .reviews__cards.cards
+            article.card
+                .card__inner
+                    button(type='button' aria-label='Открыть меню отзыва').card__button-more Открыть меню отзыва
+                    .card__info
+                        .card__user-info
+                            .card__user-left
+                                .card__avatar
+                                    img(src='img/avatar-1.png')
+                            .card__user-right
+                                .card__name Александр
+                                    span.card__status.card__status_exp Опытный
+                                .card__location
+                                    img(src='img/ukraine.svg')
+                                    | Украина
+                                .card__datetime
+                                    span.card__datetime-date 23.02.2019&nbsp;
+                                    | в&nbsp;
+                                    span.card__datetime-time 15:06
+                        .card__mark
+                            .card__rating 4.8
+                            .card__messages-count 235 сообщений
+                            .card__about
+                                p Музыкальный магазин “Super Sound”,...
+                                    a(href='#')  Перейти
+                    .card__review
+                        .card__review-block
+                            h5.card__review-title.card__review-title_plus
+                                svg(width=20 height=20 fill='#10b97b')
+                                    use(href="#plus-circle")
+                                | Достоинства
+                            p.card__review-text Предназначен для опытных инвесторов они смогут совершать сделки на бирже и видеть всю информацию о торгах сразу на нескольких экранах, в любом браузере и на любом количестве устройств.
+                        .card__review-block
+                            h5.card__review-title.card__review-title_minus
+                                svg(width=20 height=20)
+                                    use(href='#minus-circle')
+                                | Недостатки
+                            p.card__review-text Предназначен для опытных инвесторов.
+                    .card__buttons
+                        button.card__response(type='button') Ответить
+                        .card__state
+                            .card__state-section
+                                button.card__state-btn.card__state-btn_like(type='button' aria-label='Like') Нравится
+                                span.card__state-counter 23
+                            .card__state-section
+                                button.card__state-btn.card__state-btn_dislike(type='button' aria-label='Dislike') Не Нравится
+                                span.card__state-counter 19

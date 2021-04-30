@@ -14,10 +14,11 @@ module.exports = {
         },
         md: {
             width: '992px',
-            fields: '12px'
+            fields: '0px'
         },
         sm: {
-            width: '720px'
+            width: '768px',
+            fields: '0px'
         },
         xs: {
             width: '576px'

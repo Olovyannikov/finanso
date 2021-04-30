@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" href="css/style.min.css"/>
+    <title>Отзывы</title>
+  </head>
+  <body><?xml version="1.0" encoding="utf-8"?><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style>:root>svg{display:none}:root>svg:target{display:block}</style><svg viewBox="0 0 20 20" id="minus-circle" xmlns="http://www.w3.org/2000/svg"><path d="M10 1.667a8.333 8.333 0 100 16.666 8.333 8.333 0 000-16.666zm0 15a6.667 6.667 0 110-13.334 6.667 6.667 0 010 13.333zm3.333-7.5H6.667a.833.833 0 000 1.666h6.666a.833.833 0 000-1.667z"/></svg><svg viewBox="0 0 20 20" id="plus-circle" xmlns="http://www.w3.org/2000/svg"><path d="M10 1.667a8.333 8.333 0 100 16.666 8.333 8.333 0 000-16.666zm0 15a6.667 6.667 0 110-13.334 6.667 6.667 0 010 13.333zm3.333-7.5h-2.5v-2.5a.833.833 0 10-1.666 0v2.5h-2.5a.833.833 0 000 1.666h2.5v2.5a.833.833 0 001.666 0v-2.5h2.5a.833.833 0 000-1.667z"/></svg><svg viewBox="0 0 32 32" id="star" xmlns="http://www.w3.org/2000/svg"><path d="M15.168 5.06a.93.93 0 011.666 0l2.988 6.056a.93.93 0 00.7.508l6.682.97a.928.928 0 01.515 1.585l-4.835 4.713a.93.93 0 00-.268.823l1.141 6.655a.93.93 0 01-1.348.98l-5.977-3.142a.928.928 0 00-.865 0L9.59 27.35a.93.93 0 01-1.348-.98l1.141-6.655a.929.929 0 00-.268-.823L4.281 14.18a.93.93 0 01.515-1.584l6.683-.971a.929.929 0 00.7-.509l2.989-6.054z"/></svg><svg viewBox="0 0 32 32" id="star-filled" xmlns="http://www.w3.org/2000/svg"><path d="M15.168 5.06a.93.93 0 011.666 0l2.988 6.056a.93.93 0 00.7.508l6.682.97a.928.928 0 01.515 1.585l-4.835 4.713a.93.93 0 00-.268.823l1.141 6.655a.93.93 0 01-1.348.98l-5.977-3.142a.928.928 0 00-.865 0L9.59 27.35a.93.93 0 01-1.348-.98l1.141-6.655a.929.929 0 00-.268-.823L4.281 14.18a.93.93 0 01.515-1.584l6.683-.971a.929.929 0 00.7-.509l2.989-6.054z"/></svg></svg>
+    <!--include ./../mixins/_debug-->
+    <main class="main">
+      <section class="rating">
+        <div class="rating__container container">
+          <div class="rating__inner">
+            <h3 class="rating__title title">Общий рейтинг компании</h3>
+            <div class="rating__total">
+              <div class="rating__star star-rating">
+                <div class="star-rating__counter"><span class="star-rating__counter-total">4.8</span><span class="star-rating__counter-of">5</span>
+                  <div class="star-rating__stars"><span></span></div>
+                  <p class="star-rating__reviews-counter"><span>6 <span>отзывов</span></span></p>
+                </div>
+              </div>
+              <div class="rating__progress rates">
+                <ul class="rates__items">
+                  <li class="rates__item">
+                    <h4 class="rates__title">Скорость работы</h4>
+                    <div class="rates__progress">
+                      <div class="progress">
+                        <div class="progress-bar" data-progress="4.8"></div>
+                      </div>
+                      <div class="progress-info"></div>
+                    </div>
+                  </li>
+                  <li class="rates__item">
+                    <h4 class="rates__title">Качество обслуживания</h4>
+                    <div class="rates__progress">
+                      <div class="progress">
+                        <div class="progress-bar" data-progress="3.1"></div>
+                      </div>
+                      <div class="progress-info"></div>
+                    </div>
+                  </li>
+                  <li class="rates__item">
+                    <h4 class="rates__title">Ценовая политика</h4>
+                    <div class="rates__progress">
+                      <div class="progress">
+                        <div class="progress-bar" data-progress="1.6"></div>
+                      </div>
+                      <div class="progress-info"></div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <secttion class="reviews">
+        <div class="reviews__container container">
+          <h3 class="reviews__title title">Отзывы о компании ООО “Ковалевский”</h3>
+          <div class="reviews__cards cards">
+            <article class="card">
+              <div class="card__inner">
+                <button class="card__button-more" type="button" aria-label="Открыть меню отзыва">Открыть меню отзыва</button>
+                <div class="card__info">
+                  <div class="card__user-info">
+                    <div class="card__user-left">
+                      <div class="card__avatar"><img src="img/avatar-1.png"/></div>
+                    </div>
+                    <div class="card__user-right">
+                      <div class="card__name">Александр<span class="card__status card__status_exp">Опытный</span></div>
+                      <div class="card__location"><img src="img/ukraine.svg"/>Украина</div>
+                      <div class="card__datetime"><span class="card__datetime-date">23.02.2019&nbsp;</span>в&nbsp;<span class="card__datetime-time">15:06</span></div>
+                    </div>
+                  </div>
+                  <div class="card__mark">
+                    <div class="card__rating">4.8</div>
+                    <div class="card__messages-count">235 сообщений</div>
+                    <div class="card__about">
+                      <p>Музыкальный магазин “Super Sound”,...<a href="#"> Перейти</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__review">
+                  <div class="card__review-block">
+                    <h5 class="card__review-title card__review-title_plus">
+                      <svg width="20" height="20" fill="#10b97b">
+                        <use href="#plus-circle"></use>
+                      </svg>Достоинства
+                    </h5>
+                    <p class="card__review-text">Предназначен для опытных инвесторов они смогут совершать сделки на бирже и видеть всю информацию о торгах сразу на нескольких экранах, в любом браузере и на любом количестве устройств.</p>
+                  </div>
+                  <div class="card__review-block">
+                    <h5 class="card__review-title card__review-title_minus">
+                      <svg width="20" height="20">
+                        <use href="#minus-circle"></use>
+                      </svg>Недостатки
+                    </h5>
+                    <p class="card__review-text">Предназначен для опытных инвесторов.</p>
+                  </div>
+                </div>
+                <div class="card__buttons">
+                  <button class="card__response" type="button">Ответить</button>
+                  <div class="card__state">
+                    <div class="card__state-section">
+                      <button class="card__state-btn card__state-btn_like" type="button" aria-label="Like">Нравится</button><span class="card__state-counter">23</span>
+                    </div>
+                    <div class="card__state-section">
+                      <button class="card__state-btn card__state-btn_dislike" type="button" aria-label="Dislike">Не Нравится</button><span class="card__state-counter">19</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </secttion>
+    </main>
+    <script src="js/script.min.js"></script>
+  </body>
+</html>

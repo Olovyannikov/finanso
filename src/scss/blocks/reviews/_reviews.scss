@@ -1,0 +1,8 @@
+.reviews__title {
+  margin-bottom: 20px;
+  @include lg-block {
+    font-size: rem-calc(20);
+    line-height: rem-calc(32);
+    margin-bottom: 27px;
+  }
+}

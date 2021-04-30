@@ -20,6 +20,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   background: #f5f7fa;
+  color: $c-main-black;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -70,4 +71,31 @@ img {
 .container {
   @include wrapper;
   width: 100%;
+  max-width: unset;
 }
+
+.title {
+  margin: 0;
+  font-size: rem-calc(16);
+  line-height: rem-calc(24);
+  color: $c-main-black;
+  font-weight: 500;
+  @include sm-block {
+    font-size: rem-calc(20);
+    line-height: rem-calc(32);
+  }
+}
+
+.main {
+  @include sm-block {
+    margin: 30px 40px 0;
+  }
+  @include md-block {
+    margin-top: 60px;
+  }
+  @include lg-block {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
