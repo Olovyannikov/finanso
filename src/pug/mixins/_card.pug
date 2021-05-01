@@ -4,6 +4,10 @@ mixin card(avatar='', username, status, country, countryName, date, time, rating
     article.card
         .card__inner
             button(type='button' aria-label='Открыть меню отзыва').card__button-more Открыть меню отзыва
+            ul.card__menu
+                li.card__menu-item Ответить
+                li.card__menu-item Перейти в профиль
+                li.card__menu-item Удалить
             .card__info
                 .card__user-info
                     .card__user-left
