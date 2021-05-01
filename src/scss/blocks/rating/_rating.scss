@@ -4,6 +4,7 @@
   margin-bottom: 30px;
   @include row-flex;
   justify-content: center;
+  align-items: flex-start;
   @include sm-block {
     padding-bottom: 0;
     margin-bottom: 40px;
@@ -29,8 +30,8 @@
 }
 
 .rating__title {
-  padding-top: 20px;
-  margin-bottom: 15px;
+  padding-top: 40px;
+  margin-bottom: 16px;
   @include sm-block {
     padding-top: 30px;
     margin-bottom: 19px;

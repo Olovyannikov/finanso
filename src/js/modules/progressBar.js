@@ -7,12 +7,10 @@ export default () => {
             "data-progress"
         );
         if (progresses[i].getAttribute("data-progress") < 4) {
-            progresses[i].style.backgroundColor = "#F49617";
-            progressInfos[i].style.color = "#F49617";
+            progresses[i].style.backgroundColor = "#FABD48";
         }
         if (progresses[i].getAttribute("data-progress") < 3) {
-            progresses[i].style.backgroundColor = "#E06364";
-            progressInfos[i].style.color = "#E06364";
+            progresses[i].style.backgroundColor = "#E3405E";
         }
     }
 

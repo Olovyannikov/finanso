@@ -11,7 +11,6 @@ export default () => {
             let ratingCounter = +counter.querySelector('.star-rating__counter-total').innerHTML;
             let maxRating = +counter.querySelector('.star-rating__counter-of').innerHTML;
             let stars = counter.querySelector('.star-rating__stars > span');
-            console.log(maxRating)
             stars.style.width = (100 / maxRating * ratingCounter) + '%';
         });
     }

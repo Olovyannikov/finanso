@@ -10,6 +10,7 @@
   height: 32px;
   position: relative;
   display: block;
+  margin-top: -3px;
   &::before {
     position: absolute;
     content: '';
@@ -50,7 +51,7 @@
 .star-rating__counter-total {
   font-weight: 500;
   font-size: 40px;
-  left: 52px;
+  line-height: 52px;
 }
 
 .star-rating__counter-of {
@@ -66,4 +67,6 @@
   font-size: 13px;
   line-height: 22px;
   color: $c-main-grey;
+  margin: 6px 0 0;
+  margin-bottom: 18px;
 }

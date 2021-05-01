@@ -549,6 +549,9 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .rating__container {
@@ -561,8 +564,8 @@ img {
 }
 
 .rating__title {
-  padding-top: 20px;
-  margin-bottom: 15px;
+  padding-top: 40px;
+  margin-bottom: 16px;
 }
 
 .rating__star {
@@ -582,10 +585,6 @@ img {
   padding: 0;
   margin: 0;
   list-style: none;
-}
-
-.rates__item {
-  margin-bottom: 4px;
 }
 
 .rates__title {
@@ -764,7 +763,12 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 4px 7px;
+  padding: 4px 6px 2px;
+}
+
+.card__status_banned {
+  border-color: #E3405E;
+  color: #E3405E;
 }
 
 .card__datetime {
@@ -875,6 +879,9 @@ img {
   line-height: 1.5rem;
   color: #1373E5;
   font-weight: 600;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
 }
 
 .card__response:focus {
@@ -902,30 +909,45 @@ img {
   border: none;
   cursor: pointer;
   outline: none;
-  background-image: url("../img/icons/thumb.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 22px 22px;
-  width: 22px;
+  width: 48px;
   height: 22px;
   font-size: 0;
   margin-right: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .card__state-btn:focus {
   outline: none;
 }
 
-.card__state-btn_dislike {
+.card__state-btn svg {
+  width: 22px;
+  height: 22px;
+  fill: #87919C;
+  margin-right: 10px;
+}
+
+.card__state-btn:hover svg {
+  fill: #219653;
+}
+
+.card__state-btn_dislike svg {
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
+}
+
+.card__state-btn_dislike:hover svg {
+  fill: #EB5757;
 }
 
 .card__state-counter {
   font-size: 0.875rem;
   line-height: 1.375rem;
   color: #87919C;
+  font-weight: 600;
 }
 
 .card__messages-count {
@@ -960,6 +982,7 @@ img {
   height: 32px;
   position: relative;
   display: block;
+  margin-top: -3px;
 }
 
 .star-rating__stars::before {
@@ -1003,7 +1026,7 @@ img {
 .star-rating__counter-total {
   font-weight: 500;
   font-size: 40px;
-  left: 52px;
+  line-height: 52px;
 }
 
 .star-rating__counter-of {
@@ -1020,6 +1043,8 @@ img {
   font-size: 13px;
   line-height: 22px;
   color: #87919C;
+  margin: 6px 0 0;
+  margin-bottom: 18px;
 }
 
 .progress {
@@ -1039,13 +1064,14 @@ img {
 }
 
 .progress-bar {
-  background: #2bc584;
+  background: #10B97B;
   border-radius: 5px;
   color: #0F1011;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 6px;
+  width: 0;
   -webkit-transition: 1.5s ease;
   -o-transition: 1.5s ease;
   transition: 1.5s ease;
@@ -1189,6 +1215,18 @@ img {
 
   .card__review-title_minus {
     fill: #87919C;
+  }
+
+  .card__response {
+    padding: 10px 29px;
+    border-radius: 40px;
+    border: 1px solid #1373E5;
+    line-height: 1.125rem;
+  }
+
+  .card__response:hover {
+    background: #1373E5;
+    color: #fff;
   }
 
   .card__messages-count {

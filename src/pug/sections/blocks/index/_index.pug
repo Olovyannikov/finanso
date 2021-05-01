@@ -1,3 +1,5 @@
+include ./../../../mixins/_card
+
 section.rating
     .rating__container.container
         .rating__inner
@@ -5,7 +7,7 @@ section.rating
             .rating__total
                 .rating__star.star-rating
                     .star-rating__counter
-                        span.star-rating__counter-total 4.8
+                        span.star-rating__counter-total 2.3
                         span.star-rating__counter-of 5
                         .star-rating__stars
                             span
@@ -35,49 +37,10 @@ secttion.reviews
     .reviews__container.container
         h3.reviews__title.title Отзывы о компании ООО “Ковалевский”
         .reviews__cards.cards
-            article.card
-                .card__inner
-                    button(type='button' aria-label='Открыть меню отзыва').card__button-more Открыть меню отзыва
-                    .card__info
-                        .card__user-info
-                            .card__user-left
-                                .card__avatar
-                                    img(src='img/avatar-1.png')
-                            .card__user-right
-                                .card__name Александр
-                                    span.card__status.card__status_exp Опытный
-                                .card__location
-                                    img(src='img/ukraine.svg')
-                                    | Украина
-                                .card__datetime
-                                    span.card__datetime-date 23.02.2019&nbsp;
-                                    | в&nbsp;
-                                    span.card__datetime-time 15:06
-                        .card__mark
-                            .card__rating 4.8
-                            .card__messages-count 235 сообщений
-                            .card__about
-                                p Музыкальный магазин “Super Sound”,...
-                                    a(href='#')  Перейти
-                    .card__review
-                        .card__review-block
-                            h5.card__review-title.card__review-title_plus
-                                svg(width=20 height=20 fill='#10b97b')
-                                    use(href="#plus-circle")
-                                | Достоинства
-                            p.card__review-text Предназначен для опытных инвесторов они смогут совершать сделки на бирже и видеть всю информацию о торгах сразу на нескольких экранах, в любом браузере и на любом количестве устройств.
-                        .card__review-block
-                            h5.card__review-title.card__review-title_minus
-                                svg(width=20 height=20)
-                                    use(href='#minus-circle')
-                                | Недостатки
-                            p.card__review-text Предназначен для опытных инвесторов.
-                    .card__buttons
-                        button.card__response(type='button') Ответить
-                        .card__state
-                            .card__state-section
-                                button.card__state-btn.card__state-btn_like(type='button' aria-label='Like') Нравится
-                                span.card__state-counter 23
-                            .card__state-section
-                                button.card__state-btn.card__state-btn_dislike(type='button' aria-label='Dislike') Не Нравится
-                                span.card__state-counter 19
+            +card('avatar-1.png', 'Александр', 'Опытный', 'ukraine', 'Украина', '23.02.2019', '15:06', '5', '235', 'Предназначен для опытных инвесторов они смогут совершать сделки на бирже и видеть всю информацию о торгах сразу на нескольких экранах, в любом.', 'Всю информацию о торгах сразу на нескольких экранах, в любом.', '23', '10')
+            +card('avatar-2.png', 'Вера', 'Заблокирован', 'ukraine', 'Украина', '22.02.2019', '12:20', '4.8', '122', 'Предназначен для опытных инвесторов они смогут совершать сделки на бирже и видеть всю информацию о торгах сразу на нескольких экранах, в любом браузере и на любом количестве устройств. Предназначен для опытных инвесторов.', 'Предназначен для опытных инвесторов.', '15', '2')
+            +card('', 'Алексей', 'Опытный', 'ukraine', 'Украина', '22.02.2019', '11:10', '3.6', '42', 'Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.', 'Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия.', '0', '22')
+            +card('avatar-3.png', 'Саманта', 'Заблокирован', 'ukraine', 'Украина', '21.02.2019', '13:45', '5', '666', 'По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст.', 'В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен.', '666', '42')
+            +card('avatar-4.png', 'Анна', 'Опытный', 'ukraine', 'Украина', '20.02.2019', '22:22', '3', '1000', 'Маленький текст', '', '1000', '1233')
+            +card()
+            +card('avatar-5.png', 'Анатолий', 'Опытный', 'ukraine', 'Украина', '11.11.2011', '11:11', '1', '11', 'Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.', 'Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности позволяет оценить значение системы обучения кадров, соответствует насущным потребностям.', '11', '11')

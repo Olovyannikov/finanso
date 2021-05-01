@@ -133,7 +133,12 @@
   border: 1px solid $c-green;
   display: flex;
   align-items: center;
-  padding: 4px 7px;
+  padding: 4px 6px 2px;
+
+  &_banned {
+    border-color: $c-red;
+    color: $c-red;
+  }
 }
 
 .card__datetime {
@@ -247,6 +252,17 @@
   line-height: rem-calc(24);
   color: $c-main-blue;
   font-weight: 600;
+  transition: .3s;
+  @include sm-block {
+    padding: 10px 29px;
+    border-radius: 40px;
+    border: 1px solid $c-main-blue;
+    line-height: rem-calc(18);
+    &:hover {
+      background: $c-main-blue;
+      color: #fff;
+    }
+  }
 }
 
 .card__state-section {
@@ -260,23 +276,41 @@
 
 .card__state-btn {
   @include btn-reset;
-  background-image: url('../img/icons/thumb.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 22px 22px;
-  width: 22px;
+  width: 48px;
   height: 22px;
   font-size: 0;
   margin-right: 4px;
-  &_dislike {
-    transform: rotate(180deg);
+  display: flex;
+  svg {
+    width: 22px;
+    height: 22px;
+    fill: #87919C;
+    margin-right: 10px;
   }
+  &:hover {
+    svg {
+      fill: #219653;
+    }
+  }
+  &_dislike {
+    svg {
+      transform: rotate(180deg);
+    }
+    &:hover {
+      svg {
+        fill: #EB5757;
+      }
+    }
+  }
+
+
 }
 
 .card__state-counter {
   font-size: rem-calc(14);
   line-height: rem-calc(22);
   color: $c-main-grey;
+  font-weight: 600;
 }
 
 .card__messages-count {

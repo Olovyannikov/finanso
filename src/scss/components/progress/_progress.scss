@@ -7,11 +7,12 @@
   justify-content: space-between;
   align-items: center;
   &-bar {
-    background: #2bc584;
+    background: #10B97B;
     border-radius: 5px;
     color: $c-main-black;
     display: flex;
     height: 6px;
+    width: 0;
     transition: 1.5s ease;
     justify-content: center;
     align-items: center;
