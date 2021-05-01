@@ -256,6 +256,9 @@
   @include sm-block {
     margin-top: 18px;
   }
+  @include lg-block {
+    margin-bottom: 19px;
+  }
 }
 
 .card__review-block {

@@ -1416,4 +1416,8 @@ img {
   .card__user-info {
     width: 100%;
   }
+
+  .card__review {
+    margin-bottom: 19px;
+  }
 }
